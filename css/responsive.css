@@ -1,0 +1,353 @@
+@media (max-width: 1680px) {
+    .partner .inner .partnerBox {
+        padding: clamp(50px, 3.57vw, 60px);
+    }
+    .partner .inner .partnerBox .pLink li {
+        min-width: 20.5078vw;
+    }
+    .partner .inner .partnerBox .pLink li a {
+        padding-top: clamp(76px, 8.5vw, 126px);
+    }
+}
+
+@media (max-width: 1600px) {
+    header .inner .gnb {
+        justify-content: center;
+    }
+    header .inner .gnb > li > a {
+        padding: 0 1.35vw;
+    }
+}
+
+@media (max-width: 1280px) {
+    footer > .inner .left .text .mBr {
+        display: block;
+    }
+}
+
+@media (max-width: 1200px) {
+    header .inner {
+        padding: 0 40px;
+    }
+    header .inner .gnb > li {
+        font-size: 1rem;
+    }
+    header .inner .rnb > li.contact > a {
+        padding: 6px 16px;
+        font-size: 0.85rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    header .inner .gnb,
+    header .inner .rnb {
+        display: none;
+    }
+    header .inner .mnb {
+        display: block;
+    }
+    header .inner .mRnb {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        z-index: 999;
+    }
+
+
+    .mainView .inner {
+        max-height: clamp(400px, 78.13vw, 800px);
+    }
+    .mainView .inner .msScroll {
+        display: none;
+    }
+
+
+    .project .inner .title {
+        display: none;
+    }
+    .project .inner .sTitle::before {
+        content: 'Project';
+        display: block;
+        margin-bottom: 12px;
+        font-weight: 600;
+        font-size: clamp(18px, 1.38vw, 22px);
+        color: #e51837;
+    }
+    .project .inner .projectSlide {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project .inner .projectSlide .textBox {
+        flex: 1;
+        padding-right: 0;
+        padding-bottom: 0;
+    }
+    .project .inner .projectSlide .textBox .textTitle h3 {
+        font-size: clamp(24px, 4.30vw, 44px);
+        line-height: clamp(35px, 6.35vw, 65px);
+    }
+    .project .inner .projectSlide .info {
+        margin-top: clamp(20px, 2.93vw, 30px);
+    }
+    .project .inner .projectSlide .imgBox {
+        width: clamp(220px, 41.02vw, 420px);
+        order: -1;
+        flex-shrink: unset;
+        display: flex;
+        justify-content: center;
+    }
+    .project .inner .slideControl {
+        pointer-events: none;
+        justify-content: space-between;
+        top: 0;
+        left: 0;
+        bottom: unset;
+        width: 100%;
+        height: clamp(288px, 53.716vw, 550px);
+        gap: unset;
+    }
+    .project .inner .slideControl > .button-prev,
+    .project .inner .slideControl > .button-next {
+        pointer-events: auto;
+    }
+    .project .inner .slideControl > .swiper-pagination {
+        display: none;
+    }
+
+
+    .partner .inner .partnerBox {
+        padding: clamp(30px, 4.88vw, 50px) clamp(40px, 4.88vw, 50px);
+        display: block;
+    }
+    .partner .inner .partnerBox .pTitle {
+        display: block;
+    }
+    .partner .inner .partnerBox .pTitle h3 {
+        margin-bottom: 12px;
+    }
+    .partner .inner .partnerBox .pLink {
+        margin-top: clamp(30px, 4.88vw, 50px);
+    }
+    .partner .inner .partnerBox .pLink li {
+        padding: 0;
+    }
+
+
+    .alumni .inner .title p {
+        font-size: clamp(24px, 4.30vw, 44px);
+        line-height: clamp(35px, 6.35vw, 65px);
+    }
+    .alumni .marqueeBox .marquee ul li {
+        padding: 0 clamp(20px, 4.98vw, 60px);
+    }
+
+
+    .performance .inner {
+        display: block;
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .performance .inner .titleBox h2 {
+        font-size: clamp(14px, 1.76vw, 18px);
+        line-height: clamp(20px, 1.76vw, 27px);
+    }
+    .performance .inner .titleBox p {
+        font-size: clamp(24px, 4.30vw, 44px);
+        line-height: clamp(35px, 6.35vw, 65px);
+    }
+    .performance .inner .numberBox {
+        margin-top: clamp(30px, 4.88vw, 50px);
+    }
+    .performance .inner .numberBox ul li {
+        padding: clamp(16px, 1.66vw, 20px);
+    }
+    .performance .inner .numberBox ul li h3 {
+        font-size: 13px;
+    }
+    .performance .inner .numberBox ul li span {
+        font-size: clamp(22px, 2.82vw, 34px);
+        line-height: clamp(26px, 4.40vw, 53px);
+        padding-bottom: 8px;
+    }
+
+
+    .newsletter .inner .newsletterBox {
+        display: block;
+        margin-bottom: clamp(40px, 8.31vw, 100px);
+    }
+    .newsletter .inner .subscribe {
+        height: 54px;
+        margin-top: clamp(30px, 4.88vw, 50px);
+    }
+    .newsletter .inner .subscribe button {
+        height: 44px;
+    }
+    .newsletter .inner .subscribe button.on {
+        left: calc(100% - 44px);
+        width: 44px;
+    }
+    .newsletter .inner .bannerBox ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+    }
+    .newsletter .inner .bannerBox ul li a span {
+        font-size: 13px;
+    }
+    .newsletter .inner .bannerBox ul li a strong {
+        font-size: clamp(15px, 1.50vw, 18px);
+        line-height: clamp(20px, 2.24vw, 27px);
+        margin-top: 4px;
+    }
+
+
+    footer > .inner {
+        flex-direction: column;
+    }
+    footer > .inner .left{
+        order: 2;
+        margin-top: 40px;
+    }
+    footer > .inner .left .logo{}
+    footer > .inner .left .text {
+        display: none;
+    }
+    footer > .inner .right .fnb {
+        justify-content: flex-start;
+    }
+    footer > .inner .right .family {
+        position: absolute;
+        bottom: 0;
+        right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        height: 60px;
+    }
+    header .inner {
+        padding: 0 16px;
+    }
+    header .inner .logo {
+        width: 160px;
+    }
+    header .inner .hamBtn {
+        width: 20px;
+        height: 20px;
+    }
+    header .inner .hamBtn span {
+        height: 2px;
+    }
+    header .inner .hamBtn span:nth-child(2) {
+        width: calc(100% - 4px);
+        margin-left: 4px;
+    }
+    header .inner .mnb .mGnb {
+        padding: 70px 20px 40px 20px;
+    }
+
+
+    .mainView .inner {
+        padding: 0 16px;
+        max-height: clamp(160px, 78.13vw, 500px);
+    }
+
+
+    .section .inner {
+        padding: 0 16px;
+    }
+
+
+    .partner .inner .partnerBox .pLink {
+        display: block;
+    }
+    .partner .inner .partnerBox .pLink li {
+        padding-top: 10px;
+    }
+    .partner .inner .partnerBox .pLink li a {
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+    .partner .inner .partnerBox .pLink li a::before {
+        width: clamp(30px, 6.84vw, 70px);
+        height: clamp(30px, 6.84vw, 70px);
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+
+    .alumni .inner .title a {
+        font-size: 13px;
+        margin-top: 20px;
+    }
+    .alumni .marqueeBox .marquee:hover > ul {
+        animation-play-state: running;
+    }
+    .alumni .marqueeBox .marquee ul li a {
+        font-size: clamp(18px, 2.15vw, 22px);
+        line-height: clamp(32px, 2.75vw, 44px);
+    }
+    .alumni .marqueeBox .marquee ul li a:hover .hover {
+        opacity: 0;
+        visibility: hidden;
+    }
+    .alumni .marqueeBox .marquee ul li a:hover .default .text {
+        opacity: 1;
+        visibility: visible;
+    }
+    .alumni .marqueeBox .marquee ul li a:hover .default .img {
+        opacity: 0;
+    }
+    .alumni .marqueeBox .marquee ul li a:hover .default .img img {
+        animation-name: none;
+    }
+
+
+    .performance .inner {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .performance .inner .titleBox h2 {
+        font-size: clamp(14px, 1.76vw, 18px);
+        line-height: clamp(20px, 1.76vw, 27px);
+    }
+    .performance .inner .titleBox p {
+        font-size: clamp(24px, 4.30vw, 44px);
+        line-height: clamp(35px, 6.35vw, 65px);
+    }
+
+
+    footer {
+        padding: 40px 0;
+    }
+    footer > .inner {
+        padding: 0 16px;
+    }
+    footer > .inner .right .fnb ul {
+        flex-wrap: wrap;
+    }
+    footer > .inner .right .fnb ul li a {
+        font-size: 12px;
+        padding: 5px 0;
+    }
+    footer > .inner .right .info {
+        margin-top: 20px;
+    }
+    footer > .inner .right .info ul li {
+        display: flex;
+        flex-wrap: wrap;
+        font-size: 11px;
+    }
+    footer > .inner .right .info ul li strong {
+        display: block;
+        width: 100px;
+        padding: 0;
+    }
+    footer > .inner .right .info ul li span {
+        display: block;
+        width: calc(100% - 100px);
+        padding: 0;
+    }
+}

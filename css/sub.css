@@ -1,4 +1,4 @@
-.aboutView {
+.sub {
     position: fixed;
     top: 95px;
     left: 0;
@@ -9,11 +9,11 @@
     background-position: center;
     background-size: cover;
 }
-.aboutView .inner {
+.sub .inner {
     width: 100%;
     height: 100%;
 }
-.aboutView .inner > .title {
+.sub .inner > .title {
     position: absolute;
     max-width: 1200px;
     left: 0;
@@ -23,7 +23,7 @@
     color: #fff;
     z-index: 1;
 }
-.aboutView .inner > .title h2 {
+.sub .inner > .title h2 {
     font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
@@ -32,12 +32,12 @@
     opacity: 0;
     transform: translateX(-5%);
 }
-.aboutView .inner > .title h2.on {
+.sub .inner > .title h2.on {
     transition: 1s;
     opacity: 1;
     transform: translateX(0);
 }
-.aboutView .inner > .title p {
+.sub .inner > .title p {
     font-size: clamp(32px, 4.25vw, 54px);
     font-weight: 700;
     line-height: 1.1;
@@ -45,13 +45,13 @@
     opacity: 0;
     transform: translateY(30%);
 }
-.aboutView .inner > .title p.on {
+.sub .inner > .title p.on {
     transition: 1s;
     transition-delay: 0.5s;
     opacity: 1;
     transform: translateY(0);
 }
-.aboutView .inner .simbol {
+.sub .inner .simbol {
     position: absolute;
     top: 132px;
     left: 0;
@@ -62,18 +62,135 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-.aboutView .inner .simbol.on {
+.sub .inner .simbol.on {
     left: 50%;
     opacity: 1;
     transform: translateX(calc(-200% - 50px)) rotate(360deg);
     transition: 1s;
     transition-delay: 1.2s;
 }
-.aboutView .inner .backLine {
+.sub .inner .backLine {
     position: absolute;
     width: 100%;
     height: 80px;
     bottom: -80px;
     background-color: #3db283;
     z-index: 0;
+}
+
+/* content */
+.content {
+    position: relative;
+    width: 100%;
+    margin-top: 775px;
+    padding: 0 0 100px 0;
+    border-bottom: 1px solid #e2e2e2;
+    background-color: #fff;
+    z-index: 99;
+}
+.content .inner {
+    max-width: 1200px;
+    margin: auto;
+}
+.content .inner article {
+    display: flex;
+    justify-content: space-between;
+    padding: 95px 0;    
+}
+.content .inner .about01 {
+    border-bottom: 1px solid #e2e2e2;
+}
+.content .inner .about01 .title {    
+    flex: 1;
+    white-space: nowrap;
+}
+.content .inner .about01 .title h3 {
+    font-size: clamp(26px, 4.25vw, 38px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #3db283;
+}
+.content .inner .about01 .detail {
+    flex: 2;
+    /* width: calc(100% - 340px); */
+    font-size: 19px;
+    word-break: keep-all;
+}
+.content .inner .about01 .detail > p {}
+.content .inner .about01 .detail > p strong {
+    color: #3db283;
+}
+.content .inner .about01 .detail .detailInfo {
+    position: relative;
+    max-width : 605px;
+    margin-top: 35px;
+    padding-left: 30px;
+    font-size: 12px;
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+.content .inner .about01 .detail .detailInfo::after {
+    position: absolute;
+    display: block;
+    content: "";
+    height: 84px;
+    top: 51px;
+    transform: translateY(-50%);
+    left: 0px;
+    border-left: 1px solid #d8d8d8;
+}
+.content .inner .about01 .detail .detailInfo > strong {
+    position: relative;
+    display: block;
+    color: #3db283;
+}
+.content .inner .about01 .detail .detailInfo > strong::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    left: -30px;
+    transform: translateY(-50%);
+    width: 15px;
+    border-top: 1px solid #d8d8d8;
+}
+.content .inner .about01 .detail .detailInfo > p+strong {
+    margin-top: 22px;
+}
+.content .inner .about01 .detail .detailInfo > p {
+    word-break: keep-all;
+    padding-top: 10px;
+}
+.content .inner .about01 .detail .detailImg {
+    width: 80%;
+    margin: 55px auto 60px;
+    padding: 78px 68px;
+    color: #3db283;
+    text-align: center;
+    background-image: url("../img/about/bg_story01.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 90%;
+}
+.content .inner .about01 .detail .detailImg p {
+    display: block;
+    color: #000;
+    margin: 0 0 10px 0;
+}
+.content .inner .about01 .detail .detailImg strong {
+    display: block;
+    font-size: 46px;
+    line-height: 1.3;
+    letter-spacing: -1px;
+    font-weight: 900;
+}
+.content .inner .about01 .detail .detailImg strong span {
+    display: block;
+    background-image: url("../img/about/bg_story02.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.content .inner .about01 .detail .detailText {
+
 }

@@ -1081,7 +1081,6 @@ main {width: 100%;}
     width: 100%;
     height: 100%;
 }
-.newsletter .inner .bannerBox {}
 .newsletter .inner .bannerBox ul {
     display: flex;
     justify-content: space-between;
@@ -1145,7 +1144,6 @@ footer > .inner .left {
     flex-direction: column;
     justify-content: space-between;
 }
-footer > .inner .left .logo {}
 footer > .inner .left .text {
     font-size: clamp(18px, 1.75vw, 28px);
     line-height: clamp(27px, 2.50vw, 40px);
@@ -1155,7 +1153,6 @@ footer > .inner .left .text {
 footer > .inner .left .text .mBr {
     display: none;
 }
-footer > .inner .right {}
 footer > .inner .right .fnb {
     display: flex;
     justify-content: flex-end;
@@ -1236,4 +1233,25 @@ footer > .inner .right .copyright {
     color: #999;
     line-height: 19px;
     font-weight: 400;
+}
+
+/* top btn */
+.topBtn {
+    position: fixed;
+    display: none;
+    right: 40px;
+    bottom: 40px;
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    transform: rotate(-45deg);
+    border: 1px solid #000;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.topBtn.on {
+    display: block;
 }

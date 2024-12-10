@@ -23,6 +23,16 @@
     footer > .inner .left .text .mBr {
         display: block;
     }
+
+
+    .aboutView {
+        height: 480px;
+    }
+    .aboutView .inner .title {
+        width: calc(100% - 32px);
+        left: 32px;
+        bottom: -33px
+    }
 }
 
 @media (max-width: 1200px) {
@@ -209,7 +219,6 @@
         order: 2;
         margin-top: 40px;
     }
-    footer > .inner .left .logo{}
     footer > .inner .left .text {
         display: none;
     }
@@ -349,5 +358,20 @@
         display: block;
         width: calc(100% - 100px);
         padding: 0;
+    }
+
+
+
+    .topBtn {
+        right: 16px;
+        bottom: 16px;
+        width: 36px;
+        height: 36px;
+        padding: 10px;
+    }
+
+
+    .aboutView {
+        top: 60px;
     }
 }

@@ -29,14 +29,28 @@
     text-transform: uppercase;
     margin-bottom: 16px;
     letter-spacing: -1px;
+    opacity: 0;
+    transform: translateX(-5%);
+}
+.aboutView .inner > .title h2.on {
+    transition: 1s;
+    opacity: 1;
+    transform: translateX(0);
 }
 .aboutView .inner > .title p {
-    font-size: clamp(32px, 4.25vw, 58px);
+    font-size: clamp(32px, 4.25vw, 54px);
     font-weight: 700;
     line-height: 1.1;
     letter-spacing: -1.5px;
+    opacity: 0;
+    transform: translateY(30%);
 }
-
+.aboutView .inner > .title p.on {
+    transition: 1s;
+    transition-delay: 0.5s;
+    opacity: 1;
+    transform: translateY(0);
+}
 .aboutView .inner .simbol {
     position: absolute;
     top: 132px;
@@ -48,15 +62,13 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
 .aboutView .inner .simbol.on {
     left: 50%;
     opacity: 1;
-    transform: rotate(360deg);
+    transform: translateX(calc(-200% - 50px)) rotate(360deg);
     transition: 1s;
     transition-delay: 1.2s;
 }
-
 .aboutView .inner .backLine {
     position: absolute;
     width: 100%;

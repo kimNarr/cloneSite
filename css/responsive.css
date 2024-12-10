@@ -33,6 +33,12 @@
         left: 32px;
         bottom: -33px
     }
+    .aboutView .inner .simbol {
+        top: 105px;
+    }
+    .aboutView .inner .simbol.on {
+        transform: translateX(calc(-200% + 50px)) rotate(360deg);
+    }
 }
 
 @media (max-width: 1200px) {
@@ -230,6 +236,26 @@
         bottom: 0;
         right: 40px;
     }
+
+
+    .aboutView {
+        height: 394px;
+    }
+    .aboutView .inner .title {
+        width: calc(100% - 32px);
+        left: 32px;
+        bottom: -33px
+    }
+    .aboutView .inner .simbol {
+        top: 57px;
+    }
+    .aboutView .inner .simbol.on {
+        transform: translateX(calc(-150% + 50px)) rotate(360deg);
+    }
+    .aboutView .inner .backLine {
+        height: 64px;
+        bottom: -64px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -373,5 +399,23 @@
 
     .aboutView {
         top: 60px;
+        height: 267px;
+    }
+    .aboutView .inner .title {
+        width: calc(100% - 32px);
+        left: 16px;
+        bottom: -14px
+    }
+    .aboutView .inner .simbol {
+        top: 77px;
+        width: 97px;
+        height: 112px;
+    }
+    .aboutView .inner .simbol.on {
+        transform: translateX(-50%) rotate(360deg);
+    }
+    .aboutView .inner .backLine {
+        height: 40px;
+        bottom: -40px;
     }
 }

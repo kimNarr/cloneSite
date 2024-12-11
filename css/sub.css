@@ -5,12 +5,7 @@
     width: 100%;
     height: 600px;
 }
-.aboutView {
-    background-image: url("../img/about/vis_about.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
+
 .sub .inner {
     width: 100%;
     height: 100%;
@@ -94,6 +89,15 @@
     max-width: 1200px;
     margin: auto;
 }
+
+/* about */
+.aboutView {
+    background-image: url("../img/about/vis_about.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
 .content .inner .about01 {
     display: flex;
     justify-content: space-between;

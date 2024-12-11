@@ -29,18 +29,18 @@
 
 
 
-    .aboutView {
+    .sub {
         height: 480px;
     }
-    .aboutView .inner .title {
+    .sub .inner .title {
         width: calc(100% - 32px);
         left: 32px;
         bottom: -33px
     }
-    .aboutView .inner .simbol {
+    .sub .inner .simbol {
         top: 105px;
     }
-    .aboutView .inner .simbol.on {
+    .sub .inner .simbol.on {
         transform: translateX(calc(-200% + 50px)) rotate(360deg);
     }
 
@@ -286,21 +286,21 @@
 
 
 
-    .aboutView {
+    .sub {
         height: 394px;
     }
-    .aboutView .inner .title {
+    .sub .inner .title {
         width: calc(100% - 32px);
         left: 32px;
         bottom: -33px
     }
-    .aboutView .inner .simbol {
+    .sub .inner .simbol {
         top: 57px;
     }
-    .aboutView .inner .simbol.on {
+    .sub .inner .simbol.on {
         transform: translateX(calc(-150% + 50px)) rotate(360deg);
     }
-    .aboutView .inner .backLine {
+    .sub .inner .backLine {
         height: 64px;
         bottom: -64px;
     }
@@ -503,24 +503,24 @@
 
     
 
-    .aboutView {
+    .sub {
         top: 60px;
         height: 267px;
     }
-    .aboutView .inner .title {
+    .sub .inner .title {
         width: calc(100% - 32px);
         left: 16px;
         bottom: -14px
     }
-    .aboutView .inner .simbol {
+    .sub .inner .simbol {
         top: 77px;
         width: 97px;
         height: 112px;
     }
-    .aboutView .inner .simbol.on {
+    .sub .inner .simbol.on {
         transform: translateX(-50%) rotate(360deg);
     }
-    .aboutView .inner .backLine {
+    .sub .inner .backLine {
         height: 40px;
         bottom: -40px;
     }

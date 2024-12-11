@@ -92,12 +92,10 @@
     max-width: 1200px;
     margin: auto;
 }
-.content .inner article {
+.content .inner .about01 {
     display: flex;
     justify-content: space-between;
-    padding: 95px 0;    
-}
-.content .inner .about01 {
+    padding: 95px 0;
     border-bottom: 1px solid #e2e2e2;
 }
 .content .inner .about01 .title {    
@@ -112,11 +110,9 @@
 }
 .content .inner .about01 .detail {
     flex: 2;
-    /* width: calc(100% - 340px); */
     font-size: 19px;
     word-break: keep-all;
 }
-.content .inner .about01 .detail > p {}
 .content .inner .about01 .detail > p strong {
     color: #3db283;
 }
@@ -171,6 +167,11 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
+    opacity: 0;
+    transition: 0.5s;
+}
+.content .inner .about01 .detail .detailImg.on {
+    opacity: 1;
 }
 .content .inner .about01 .detail .detailImg p {
     display: block;
@@ -191,6 +192,87 @@
     background-position: center;
     background-size: contain;
 }
-.content .inner .about01 .detail .detailText {
-
+.content .inner .about02 {
+    padding: 95px 0
+}
+.content .inner .about02 .title h3 {
+    font-size: clamp(26px, 4.25vw, 38px);
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #3db283;
+}
+.content .inner .about02 .detail {
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding: 105px 0 135px;
+    margin-top: 80px;
+}
+.content .inner .about02 .detail .img {
+    position: relative;
+    width: 580px;
+    height: fit-content;
+    margin: auto;
+}
+.content .inner .about02 .detail .img span {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.content .inner .about02 .detail .img span.img01,
+.content .inner .about02 .detail .img span.img02 {
+    opacity: 0;
+}
+.content .inner .about02 .detail .img span.img03 {
+    position: relative;
+    opacity: 0;
+}
+.content .inner .about02 .detail .text {
+    opacity: 0;
+}
+.content .inner .about02 .detail .text .detailText {
+    position: absolute;
+    width: 264px;
+    letter-spacing: -1px;
+}
+.content .inner .about02 .detail .text .detailText h4 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #3db283;
+    margin: 0 0 20px 0;
+}
+.content .inner .about02 .detail .text .detailText div {
+    width: 100%;
+    word-break: keep-all;
+}
+.content .inner .about02 .detail .text .detailText div+div {
+    margin-top: 40px;
+}
+.content .inner .about02 .detail .text .detailText div h5 {
+    font-size: 15px;
+    font-weight: 900;
+    margin: 0 0 8px 0;
+}
+.content .inner .about02 .detail .text .detailText div p {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 1.4;
+}
+.content .inner .about02 .detail .text .text01 {
+    top: 0;
+    left: 0;
+    text-align: right;
+}
+.content .inner .about02 .detail .text .text02 {
+    bottom: 0;
+    left: 0;
+    text-align: right;
+}
+.content .inner .about02 .detail .text .text03 {
+    top: 0;
+    right: 0;
+}
+.content .inner .about02 .detail .text .text04 {
+    bottom: 60px;
+    right: 0;
 }

@@ -1,3 +1,4 @@
+/* 1680 */
 @media (max-width: 1680px) {
     .partner .inner .partnerBox {
         padding: clamp(50px, 3.57vw, 60px);
@@ -10,6 +11,7 @@
     }
 }
 
+/* 1600 */
 @media (max-width: 1600px) {
     header .inner .gnb {
         justify-content: center;
@@ -19,10 +21,12 @@
     }
 }
 
+/* 1280 */
 @media (max-width: 1280px) {
     footer > .inner .left .text .mBr {
         display: block;
     }
+
 
 
     .aboutView {
@@ -41,13 +45,14 @@
     }
 
 
+
     .content {
         margin-top: 655px;
     }
     .content .inner {
         padding: 0 3%;
     }
-    .content .inner article {
+    .content .inner .about01 {
         padding: 80px 0 60px 0;
     }
     .content .inner .about01 .detail .detailImg {
@@ -58,8 +63,23 @@
     .content .inner .about01 .detail .detailImg strong {
         font-size: 35px;
     }
+
+
+    .content .inner .about02 {
+        padding: 80px 0 60px 0;
+    }
+    .content .inner .about02 .detail .img {
+        width: 474px;
+    }
+    .content .inner .about02 .detail .text .detailText {
+        width: 215px;
+    }
+    .content .inner .about02 .detail .text .text03 div p br {
+        display: none;
+    }
 }
 
+/* 1200 */
 @media (max-width: 1200px) {
     header .inner {
         padding: 0 40px;
@@ -73,6 +93,7 @@
     }
 }
 
+/* 1024 */
 @media (max-width: 1024px) {
     header .inner .gnb,
     header .inner .rnb {
@@ -89,12 +110,14 @@
     }
 
 
+
     .mainView .inner {
         max-height: clamp(400px, 78.13vw, 800px);
     }
     .mainView .inner .msScroll {
         display: none;
     }
+
 
 
     .project .inner .title {
@@ -150,6 +173,7 @@
     }
 
 
+
     .partner .inner .partnerBox {
         padding: clamp(30px, 4.88vw, 50px) clamp(40px, 4.88vw, 50px);
         display: block;
@@ -168,6 +192,7 @@
     }
 
 
+
     .alumni .inner .title p {
         font-size: clamp(24px, 4.30vw, 44px);
         line-height: clamp(35px, 6.35vw, 65px);
@@ -175,6 +200,7 @@
     .alumni .marqueeBox .marquee ul li {
         padding: 0 clamp(20px, 4.98vw, 60px);
     }
+
 
 
     .performance .inner {
@@ -204,6 +230,7 @@
         line-height: clamp(26px, 4.40vw, 53px);
         padding-bottom: 8px;
     }
+
 
 
     .newsletter .inner .newsletterBox {
@@ -237,6 +264,7 @@
     }
 
 
+
     footer > .inner {
         flex-direction: column;
     }
@@ -255,6 +283,7 @@
         bottom: 0;
         right: 40px;
     }
+
 
 
     .aboutView {
@@ -277,6 +306,7 @@
     }
 
 
+
     .content .inner .about01 .detail {
         font-size: 14px;
     }
@@ -285,8 +315,48 @@
         margin: 45px auto 45px;
         padding: 55px 0 35px;
     }
+
+
+
+    .content .inner .about02 {
+        display: flex;
+        justify-content: space-between;
+    }
+    .content .inner .about02 .title {
+        flex: 1;
+    }
+    .content .inner .about02 .detail {
+        flex: 2;
+        padding: 5px 0 60px;
+        margin-top: 0;
+    }
+    .content .inner .about02 .detail .img {
+        width: 300px;
+    }
+    .content .inner .about02 .detail .text  {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 15px;
+    }
+    .content .inner .about02 .detail .text .detailText {
+        position: unset;
+        width: fit-content;
+        margin-top: 55px;
+        text-align: left;
+    }
+    .content .inner .about02 .detail .text .detailText h4 {
+        font-size: 16px;
+        margin: 0 0 18px 0;
+    }
+    .content .inner .about02 .detail .text .detailText div h5 {
+        font-size: 12px;
+    }
+    .content .inner .about02 .detail .text .detailText div p {
+        font-size: 12px;
+    }
 }
 
+/* 768 */
 @media (max-width: 768px) {
     header {
         height: 60px;
@@ -313,15 +383,18 @@
     }
 
 
+
     .mainView .inner {
         padding: 0 16px;
         max-height: clamp(160px, 78.13vw, 500px);
     }
 
 
+
     .section .inner {
         padding: 0 16px;
     }
+
 
 
     .partner .inner .partnerBox .pLink {
@@ -340,6 +413,7 @@
         top: 50%;
         transform: translateY(-50%);
     }
+
 
 
     .alumni .inner .title a {
@@ -369,6 +443,7 @@
     }
 
 
+
     .performance .inner {
         padding-top: 80px;
         padding-bottom: 80px;
@@ -381,6 +456,7 @@
         font-size: clamp(24px, 4.30vw, 44px);
         line-height: clamp(35px, 6.35vw, 65px);
     }
+
 
 
     footer {
@@ -453,6 +529,7 @@
 
     .content {
         margin-top: 367px;
+        padding: 0;
     }
     .content .inner article {
         padding: 35px 4.5% 35px;
@@ -475,6 +552,35 @@
     }
     .content .inner .about01 .detail .detailImg strong {
         font-size: 24px;
+    }
+
+
+
+    .content .inner .about02 {
+        flex-direction: column;
+        padding-bottom: 0;
+    }
+    .content .inner .about02 .title h3 {
+        font-size: 21px;
+    }
+    .content .inner .about02 .detail {
+        margin-top: 30px;
+    }
+    .content .inner .about02 .detail .img {
+        width: fit-content;
+        max-width: 580px;
+    }
+    .content .inner .about02 .detail .text {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .content .inner .about02 .detail .text br {
+        display: none;
+    }
+    .content .inner .about02 .detail .text .detailText {
+        margin-top: 30px;
+    }
+    .content .inner .about02 .detail .text .detailText div+div {
+        margin-top: 20px;
     }
 }
 

@@ -4,6 +4,9 @@
     left: 0;
     width: 100%;
     height: 600px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .sub .inner {
@@ -93,36 +96,33 @@
 /* about */
 .aboutView {
     background-image: url("../img/about/vis_about.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
 }
 
-.content .inner .about01 {
+.about01 {
     display: flex;
     justify-content: space-between;
     padding: 95px 0;
     border-bottom: 1px solid #e2e2e2;
 }
-.content .inner .about01 .title {    
+.about01 .title {    
     flex: 1;
     white-space: nowrap;
 }
-.content .inner .about01 .title h3 {
+.about01 .title h3 {
     font-size: clamp(26px, 4.25vw, 38px);
     font-weight: 900;
     letter-spacing: -1px;
     color: #3db283;
 }
-.content .inner .about01 .detail {
+.about01 .detail {
     flex: 2;
     font-size: 19px;
     word-break: keep-all;
 }
-.content .inner .about01 .detail > p strong {
+.about01 .detail > p strong {
     color: #3db283;
 }
-.content .inner .about01 .detail .detailInfo {
+.about01 .detail .detailInfo {
     position: relative;
     max-width : 605px;
     margin-top: 35px;
@@ -131,7 +131,7 @@
     letter-spacing: -1px;
     word-break: keep-all;
 }
-.content .inner .about01 .detail .detailInfo::after {
+.about01 .detail .detailInfo::after {
     position: absolute;
     display: block;
     content: "";
@@ -141,12 +141,12 @@
     left: 0px;
     border-left: 1px solid #d8d8d8;
 }
-.content .inner .about01 .detail .detailInfo > strong {
+.about01 .detail .detailInfo > strong {
     position: relative;
     display: block;
     color: #3db283;
 }
-.content .inner .about01 .detail .detailInfo > strong::before {
+.about01 .detail .detailInfo > strong::before {
     position: absolute;
     display: block;
     content: "";
@@ -156,14 +156,14 @@
     width: 15px;
     border-top: 1px solid #d8d8d8;
 }
-.content .inner .about01 .detail .detailInfo > p+strong {
+.about01 .detail .detailInfo > p+strong {
     margin-top: 22px;
 }
-.content .inner .about01 .detail .detailInfo > p {
+.about01 .detail .detailInfo > p {
     word-break: keep-all;
     padding-top: 10px;
 }
-.content .inner .about01 .detail .detailImg {
+.about01 .detail .detailImg {
     width: 80%;
     margin: 55px auto 60px;
     padding: 78px 68px;
@@ -176,109 +176,260 @@
     opacity: 0;
     transition: 0.5s;
 }
-.content .inner .about01 .detail .detailImg.on {
+.about01 .detail .detailImg.on {
     opacity: 1;
 }
-.content .inner .about01 .detail .detailImg p {
+.about01 .detail .detailImg p {
     display: block;
     color: #000;
     margin: 0 0 10px 0;
 }
-.content .inner .about01 .detail .detailImg strong {
+.about01 .detail .detailImg strong {
     display: block;
     font-size: 46px;
     line-height: 1.3;
     letter-spacing: -1px;
     font-weight: 900;
 }
-.content .inner .about01 .detail .detailImg strong span {
+.about01 .detail .detailImg strong span {
     display: block;
     background-image: url("../img/about/bg_story02.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
 }
-.content .inner .about02 {
+.about02 {
     padding: 95px 0
 }
-.content .inner .about02 .title h3 {
+.about02 .title h3 {
     font-size: clamp(26px, 4.25vw, 38px);
     font-weight: 900;
     letter-spacing: -1px;
     color: #3db283;
 }
-.content .inner .about02 .detail {
+.about02 .detail {
     position: relative;
     width: 100%;
     height: fit-content;
     padding: 105px 0 135px;
     margin-top: 80px;
 }
-.content .inner .about02 .detail .img {
+.about02 .detail .img {
     position: relative;
     width: 580px;
     height: fit-content;
     margin: auto;
 }
-.content .inner .about02 .detail .img span {
+.about02 .detail .img span {
     position: absolute;
     top: 0;
     left: 0;
 }
-.content .inner .about02 .detail .img span.img01,
-.content .inner .about02 .detail .img span.img02 {
+.about02 .detail .img span.img01,
+.about02 .detail .img span.img02 {
     opacity: 0;
 }
-.content .inner .about02 .detail .img span.img03 {
+.about02 .detail .img span.img03 {
     position: relative;
     opacity: 0;
 }
-.content .inner .about02 .detail .text {
+.about02 .detail .text {
     opacity: 0;
 }
-.content .inner .about02 .detail .text .detailText {
+.about02 .detail .text .detailText {
     position: absolute;
     width: 264px;
     letter-spacing: -1px;
 }
-.content .inner .about02 .detail .text .detailText h4 {
+.about02 .detail .text .detailText h4 {
     font-size: 20px;
     font-weight: 700;
     color: #3db283;
     margin: 0 0 20px 0;
 }
-.content .inner .about02 .detail .text .detailText div {
+.about02 .detail .text .detailText div {
     width: 100%;
     word-break: keep-all;
 }
-.content .inner .about02 .detail .text .detailText div+div {
+.about02 .detail .text .detailText div+div {
     margin-top: 40px;
 }
-.content .inner .about02 .detail .text .detailText div h5 {
+.about02 .detail .text .detailText div h5 {
     font-size: 15px;
     font-weight: 900;
     margin: 0 0 8px 0;
 }
-.content .inner .about02 .detail .text .detailText div p {
+.about02 .detail .text .detailText div p {
     font-size: 15px;
     font-weight: 300;
     line-height: 1.4;
 }
-.content .inner .about02 .detail .text .text01 {
+.about02 .detail .text .text01 {
     top: 0;
     left: 0;
     text-align: right;
 }
-.content .inner .about02 .detail .text .text02 {
+.about02 .detail .text .text02 {
     bottom: 0;
     left: 0;
     text-align: right;
 }
-.content .inner .about02 .detail .text .text03 {
+.about02 .detail .text .text03 {
     top: 0;
     right: 0;
 }
-.content .inner .about02 .detail .text .text04 {
+.about02 .detail .text .text04 {
     bottom: 60px;
     right: 0;
+}
+
+/* program */
+.programView {
+    background-image: url("../img/program/vis_program.jpg");
+}
+
+.program01 {
+    max-width: 100%;
+    background-color: #323332;
+}
+.program01 > div {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0 85px 0;
+    border-bottom: 1px solid #5b5c5b;
+    display: flex;
+    justify-content: space-between;
+}
+.program01 > div .title {
+    position: relative;
+    flex: 1;
+}
+.program01 > div .title h3 {
+    font-size: clamp(26px, 4.25vw, 38px);
+    font-weight: 900;
+    line-height: 1.2;
+    color: #fff;
+}
+.program01 > div .title a {
+    position: absolute;
+    display: block;
+    width: 50%;
+    bottom: -40px;
+    left: 0;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #3db283;
+}
+.program01 > div .title a::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 10px;
+    right: 0;
+    bottom: 9px;
+    transform: rotate(45deg);
+    border-top: 1px solid #3db283;
+}
+.program01 > div .title a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 50px;
+    right: 0;
+    bottom: 5px;
+    border-top: 1px solid #3db283;
+}
+.program01 > div .detail {
+    flex: 2;
+    display: flex;
+}
+.program01 > div .detail > dl:first-child {
+    width: 45%;
+    padding-right: 5%;
+}
+.program01 > div .detail > dl:last-child {
+    position: relative;
+    width: 55%;
+    padding-left: 15%;
+}
+.program01 > div .detail > dl:last-child::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 12px;
+    left: 0;
+    width: 50px;
+    transform: rotate(-35deg);
+    border-top: 1px solid #3db283;
+}
+.program01 > div .detail > dl dt {
+    font-size: 19px;
+    color: #3db283;
+}
+.program01 > div .detail > dl dd {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #a0a0a0;
+    margin-top: 20px;
+    word-break: keep-all;
+}
+.program01 > div .detail > ul {
+    display: flex;
+}
+.program01 > div .detail > ul li {
+    position: relative;
+    height: fit-content;
+}
+.program01 > div .detail > ul li img {
+
+}
+.program01 > div .detail > ul li p {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -24px;
+    font-size: 15px;
+    font-weight: 800;
+    letter-spacing: -0.8px;
+    color: #3db283;
+    text-align: center;
+}
+.program01 > div .detail > ul li:nth-child(4) p,
+.program01 > div .detail > ul li:last-child p {
+    color: #000;
+}
+
+.program01 > div .detail > ul li:nth-child(4) span {
+    position: absolute;
+    display: inline-block;
+    width: 260px;
+    bottom: -50px;
+    left: 50%;
+    padding-top: 32px;
+    margin-left: -130px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4edba2;
+    text-align: center;
+}
+.program01 > div .detail > ul li:nth-child(4) span::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -8px;
+    left: calc(50% - 0.5px);
+    width: 1px;
+    height: 20px;
+    background-color: #3db283;
+}
+.program01 > div .detail > ul li:nth-child(4) span::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: -8px;
+    left: calc(50% - 0.5px);
+    width: 5px;
+    height: 5px;
+    background-color: #3db283;
 }

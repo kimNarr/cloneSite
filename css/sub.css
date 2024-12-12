@@ -287,7 +287,6 @@
 .programView {
     background-image: url("../img/program/vis_program.jpg");
 }
-
 .program01 {
     max-width: 100%;
     background-color: #323332;
@@ -313,7 +312,7 @@
 .program01 > div .title a {
     position: absolute;
     display: block;
-    width: 50%;
+    width: 155px;
     bottom: -40px;
     left: 0;
     font-weight: 700;
@@ -378,8 +377,10 @@
     word-break: keep-all;
 }
 .program01 > .p03 .detail > ul {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
     padding-bottom: 50px;
+    gap: 0 10px;
 }
 .program01 > .p03 .detail > ul li {
     position: relative;
@@ -401,7 +402,44 @@
 .program01 > .p03 .detail > ul li:last-child p {
     color: #000;
 }
-
+.program01 > .p03 .detail > ul li:not(:first-of-type) p::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    left: -5px;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-image: url("../img/program/bg_arrow.png");
+    background-size: 100%;
+}
+.program01 > .p03 .detail > ul li:is(:nth-child(2),:nth-child(3)) p::before {
+    background-position: left top;
+}
+.program01 > .p03 .detail > ul li:nth-child(4) p::before {
+    background-position: left center;
+}
+.program01 > .p03 .detail > ul li:last-child p::before {
+    background-position: left bottom;
+}
+.program01 > .p03 .detail > ul li p::after {
+    position: absolute;
+    display: none;
+    content: "";
+    top: 50%;
+    right: -15px;
+    transform: translate(-50%, -50%);
+    width: 10px;
+    height: 14px;
+    background-repeat: no-repeat;
+    background-image: url("../img/program/bg_arrow.png");
+    background-size: 100%;
+}
+.program01 > .p03 .detail > ul li:nth-child(4) p::after {
+    background-position: left bottom;
+}
 .program01 > .p03 .detail > ul li:nth-child(4) span {
     position: absolute;
     display: inline-block;
@@ -420,7 +458,7 @@
     display: block;
     content: "";
     top: -8px;
-    left: calc(50% - 0.5px);
+    left: 50%;
     width: 1px;
     height: 20px;
     background-color: #3db283;
@@ -473,16 +511,109 @@
     grid-template-columns: repeat(3, 1fr);
     column-gap: 30px;
 }
-.program01 > .p04 .detail > ul li dl {
+.program01 > .p04 .detail > ul li .info dl {
     font-size: 15px;
     letter-spacing: -1px;
     word-break: keep-all;
 }
-.program01 > .p04 .detail > ul li dt {
+.program01 > .p04 .detail > ul li .info dl dt {
     color: #fff;
     font-weight: 700;
 }
-.program01 > .p04 .detail > ul li dd {
+.program01 > .p04 .detail > ul li .info dl dd {
     color: #a0a0a0;
     margin-top: 10px;
+}
+.program02 {
+    max-width: 100%;
+    border-bottom: 1px solid #e2e2e2;
+}
+.program02 > div {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0 85px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.program02 > div .title {
+    flex: 1;
+}
+.program02 > div .title h3 {
+    font-size: clamp(26px, 4.25vw, 38px);
+    font-weight: 900;
+    line-height: 1.2;
+    color: #3db283;
+}
+.program02 > div .detail {
+    flex: 2;
+}
+.program02 > .p01 .detail > ul.default {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    row-gap: 80px;
+}
+.program02 > .p01 .detail > ul.default > li {
+    position: relative;
+    width: 100%;
+}
+.program02 > .p01 .detail > ul.default > li > strong {
+    position: absolute;
+    top: 0;
+    left: -12%;
+    width: 30px;
+    padding-top: 5px;
+    color: #3db283;
+    border-top: 4px solid #3db283;
+}
+.program02 > .p01 .detail > ul.default > li .thum > ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2px;
+}
+.program02 > .p01 .detail > ul.default > li .thum > ul > li {}
+.program02 > .p01 .detail > ul.default > li .thum > ul > li.text {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 30px 30px 0 0;
+    gap: 10px 30px;
+}
+.program02 > .p01 .detail > ul.default > li .thum > ul > li.text > dl {
+    position: relative;
+    padding-left: 30px;
+    letter-spacing: -0.5px;
+}
+.program02 > .p01 .detail > ul.default > li .thum > ul > li.text > dl::before {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 5px;
+    left: 0;
+    width: 17px;
+    height: 17px;
+    background-image: url("../img/program/ico_blet01.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+}
+.program02 > .p01 .detail > ul.default > li .thum > ul > li.text > dl > dt {
+    font-size: 15px;
+    font-weight: 700;
+    word-break: keep-all;
+}
+.program02 > .p01 .detail > ul.default > li .thum > ul > li.text > dl > dd {
+    font-size: 13px;
+    margin-top: 10px;
+    word-break: keep-all;
+}
+.program02 > .p01 .detail > ul.default > li .thum > ul > li.wide {
+    grid-column: 1/3;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 40px;
+}
+.program02 > .p01 .detail > ul.mobile {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
 }

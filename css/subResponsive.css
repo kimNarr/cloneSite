@@ -52,9 +52,11 @@
 
 
 
-    .program01 {
+    .program01,
+    .program02 {
         padding: 0 3%;
     }
+
 }
 
 /* 1024 */
@@ -142,11 +144,69 @@
     .program01 > div .title h3 {
         font-size: clamp(16px, 4.25vw, 26px);
     }
+    .program01 > div .title a {
+        font-size: 12px;
+    }
     .program01 > .p01 .detail > dl dt {
         font-size: 15px;
     }
     .program01 > .p01 .detail > dl dd {
         font-size: 12px;
+    }
+    .program01 > .p03 .detail > ul {
+        grid-template-columns: repeat(6, 1fr);
+    }
+    .program01 > .p03 .detail > ul li:first-child {
+        grid-column: 1/3;
+    }
+    .program01 > .p03 .detail > ul li:nth-child(2) {
+        grid-column: 3/5;
+    }
+    .program01 > .p03 .detail > ul li:nth-child(3) {
+        grid-column: 5/7;
+    }
+    .program01 > .p03 .detail > ul li:nth-child(4) {
+        grid-column: 2/4;
+        grid-row: 2/3;
+    }
+    .program01 > .p03 .detail > ul li:last-child {
+        grid-column: 4/6;
+        grid-row: 2/3;
+    }
+    .program01 > .p04 .detail > ul li p {
+        font-size: 15px;
+    }
+    .program01 > .p04 .detail > ul li p span {
+        font-size: 12px;
+    }
+    .program01 > .p04 .detail > ul li .info {
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 30px;
+    }
+    .program01 > .p04 .detail > ul li .info dl {
+        font-size: 12px;
+    }
+
+
+
+    .program02 > div {
+        width: 92%;
+    }
+    .program02 > div .title h3 {
+        font-size: clamp(16px, 4.25vw, 26px);
+    }
+    .program02 > .p01 .detail > ul.default > li .thum > ul > li.text {
+        padding: 10px 10px 0 0;
+        gap: 10px;
+    }
+    .program02 > .p01 .detail > ul.default > li .thum > ul > li.text > dl > dt {
+        font-size: 12px;
+    }
+    .program02 > .p01 .detail > ul.default > li .thum > ul > li.text > dl::before {
+        top: 2px;
+    }
+    .program02 > .p01 .detail > ul.default > li .thum > ul > li.text > dl > dd {
+        font-size: 10.5px;
     }
 }
 
@@ -234,12 +294,118 @@
     .about02 .detail .text .detailText div+div {
         margin-top: 20px;
     }
+
+
+
+    .program01 > div {
+        padding: 35px 0;
+        display: block;
+    }
+    .program01 > div .detail {
+        margin-top: 35px;
+        column-gap: 20px;
+    }
+    .program01 > .p01 .detail > dl:first-child,
+    .program01 > .p01 .detail > dl:last-child {
+        padding: 0;
+    }
+    .program01 > .p01 .detail > dl:last-child::after {
+        display: none;
+    }
+    .program01 > div .title a {
+        width: fit-content;
+        left: unset;
+        right: 50px;
+        top: 50%;
+        bottom: unset;
+        transform: translateY(-50%);
+    }
+    .program01 > div .title a::before,
+    .program01 > div .title a::after {
+        right: -50px;
+    }
+    .program01 > div .title a::after {
+        width: 25px;
+    }
+    .program01 > .p03 .detail > ul {
+        grid-template-columns: repeat(3, 1fr);
+        margin: auto;
+    }
+    .program01 > .p03 .detail > ul li:first-child,
+    .program01 > .p03 .detail > ul li:nth-child(2),
+    .program01 > .p03 .detail > ul li:nth-child(3),
+    .program01 > .p03 .detail > ul li:nth-child(4),
+    .program01 > .p03 .detail > ul li:last-child {
+        grid-row: unset;
+        grid-column: unset;
+    }
+    .program01 > .p03 .detail > ul li p {
+        font-size: 12px;
+    }
+    .program01 > .p03 .detail > ul li:not(:first-of-type) p::before {
+        display: none;
+    }
+    .program01 > .p03 .detail > ul li:not(:last-of-type) p::after {
+        display: block;
+    }
+    .program01 > .p03 .detail > ul li:nth-child(4) span {
+        width: 210px;
+        margin-left: 0;
+        padding-left: 55px;
+        font-size: 10.5px;
+        text-align: left;
+    }
+    .program01 > .p03 .detail > ul li:nth-child(4) span::before {
+        top: 0;
+        left: 0;
+        width: 38px;
+        height: 50px;
+        background-color: transparent;
+        border-left: 1px solid #3db283;
+        border-bottom: 1px solid #3db283;
+    }
+    .program01 > .p03 .detail > ul li:nth-child(4) span::after {
+        top: 46px;
+        left: 37px;
+    }
+    .program01 > .p04 .detail > ul li p {
+        min-width: 100px;
+    }
+    .program01 > .p04 .detail > ul li .info {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+
+    .program02 > div {
+        padding: 35px 0;
+        display: block;
+    }
+    .program02 > div .detail {
+        margin-top: 35px;
+        column-gap: 20px;
+    }
+    .program02 > .p01 .detail > ul.default > li > strong {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    .program02 > .p01 .detail > ul.default {
+        display: none;
+    }
+    .program02 > .p01 .detail > ul.mobile {
+        display: block;
+    }
 }
 
 @media (max-width: 487px) {
     .about01 .detail .detailInfo::after {
         height: 102px;
         top: 59px;
+    }
+    .program01 > .p03 .detail > ul.default li p {
+        margin-top: clamp(-17px, -4.5vw, -22px);
     }
 }
 

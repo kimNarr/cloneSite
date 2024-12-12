@@ -343,16 +343,19 @@
     flex: 2;
     display: flex;
 }
-.program01 > div .detail > dl:first-child {
+.program01 > .p01 .detail > dl {
+    letter-spacing: -0.5px;
+}
+.program01 > .p01 .detail > dl:first-child {
     width: 45%;
     padding-right: 5%;
 }
-.program01 > div .detail > dl:last-child {
+.program01 > .p01 .detail > dl:last-child {
     position: relative;
     width: 55%;
     padding-left: 15%;
 }
-.program01 > div .detail > dl:last-child::after {
+.program01 > .p01 .detail > dl:last-child::after {
     position: absolute;
     display: block;
     content: "";
@@ -362,45 +365,44 @@
     transform: rotate(-35deg);
     border-top: 1px solid #3db283;
 }
-.program01 > div .detail > dl dt {
+.program01 > .p01 .detail > dl dt {
     font-size: 19px;
+    font-weight: 700;
     color: #3db283;
 }
-.program01 > div .detail > dl dd {
+.program01 > .p01 .detail > dl dd {
     font-size: 15px;
     line-height: 1.5;
     color: #a0a0a0;
     margin-top: 20px;
     word-break: keep-all;
 }
-.program01 > div .detail > ul {
+.program01 > .p03 .detail > ul {
     display: flex;
+    padding-bottom: 50px;
 }
-.program01 > div .detail > ul li {
+.program01 > .p03 .detail > ul li {
     position: relative;
     height: fit-content;
 }
-.program01 > div .detail > ul li img {
-
-}
-.program01 > div .detail > ul li p {
+.program01 > .p03 .detail > ul li p {
     position: absolute;
     width: 100%;
     top: 50%;
     left: 0;
-    margin-top: -24px;
+    margin-top: -22px;
     font-size: 15px;
     font-weight: 800;
     letter-spacing: -0.8px;
     color: #3db283;
     text-align: center;
 }
-.program01 > div .detail > ul li:nth-child(4) p,
-.program01 > div .detail > ul li:last-child p {
+.program01 > .p03 .detail > ul li:nth-child(4) p,
+.program01 > .p03 .detail > ul li:last-child p {
     color: #000;
 }
 
-.program01 > div .detail > ul li:nth-child(4) span {
+.program01 > .p03 .detail > ul li:nth-child(4) span {
     position: absolute;
     display: inline-block;
     width: 260px;
@@ -413,7 +415,7 @@
     color: #4edba2;
     text-align: center;
 }
-.program01 > div .detail > ul li:nth-child(4) span::before {
+.program01 > .p03 .detail > ul li:nth-child(4) span::before {
     position: absolute;
     display: block;
     content: "";
@@ -423,13 +425,64 @@
     height: 20px;
     background-color: #3db283;
 }
-.program01 > div .detail > ul li:nth-child(4) span::after {
+.program01 > .p03 .detail > ul li:nth-child(4) span::after {
     position: absolute;
     display: block;
     content: "";
-    top: -8px;
-    left: calc(50% - 0.5px);
-    width: 5px;
-    height: 5px;
+    top: 10px;
+    left: calc(50% - 4px);
+    width: 9px;
+    height: 9px;
+    border-radius: 100%;
     background-color: #3db283;
+}
+.program01 > .p04 .detail > ul {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 60px;
+}
+.program01 > .p04 .detail > ul li {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.program01 > .p04 .detail > ul li:not(:last-of-type)::after {
+    position: absolute;
+    display: block;
+    content: "";
+    bottom: -25px;
+    left: 0;
+    width: 50px;
+    border-top: 1px solid #3db283;
+    transform: rotate(-35deg);
+}
+.program01 > .p04 .detail > ul li p {
+    grid-column: 1/2;
+    font-size: 19px;
+    font-weight: 700;
+    letter-spacing: -1px;
+    color: #3db283;
+}
+.program01 > .p04 .detail > ul li p span {
+    font-size: 16px;
+}
+.program01 > .p04 .detail > ul li .info {
+    grid-column: 2/5;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+}
+.program01 > .p04 .detail > ul li dl {
+    font-size: 15px;
+    letter-spacing: -1px;
+    word-break: keep-all;
+}
+.program01 > .p04 .detail > ul li dt {
+    color: #fff;
+    font-weight: 700;
+}
+.program01 > .p04 .detail > ul li dd {
+    color: #a0a0a0;
+    margin-top: 10px;
 }

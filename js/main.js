@@ -36,7 +36,7 @@ gsap.to(project,{
 });
 
 // 프로젝트 섹션 슬라이드
-let projectSwiper = new Swiper(".mySwiper", {
+let projectSlide = new Swiper(".sectionSlider", {
     slidesPerView: 1,
     spaceBetween: 0,
     effect: "fade",

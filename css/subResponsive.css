@@ -20,7 +20,7 @@
     .content {
         margin-top: 655px;
     }
-    .content .inner {
+    .content > .inner {
         padding: 0 3%;
     }
     .about01 {
@@ -53,8 +53,21 @@
 
 
     .program01,
-    .program02 {
+    .program02,
+    .program03,
+    .program04 {
         padding: 0 3%;
+    }
+
+    .program03 > div .detail ul li a,
+    .program03 > div .detail ul li:last-child::after {
+        width: calc(100% - 60px);
+    }
+    .program03 > div .detail ul li p {
+        padding: 0 25px 0 60px;
+    }
+    .program03 > div .detail ul li.on p {
+        padding: 0 25px 32px 60px;
     }
 
 }
@@ -207,6 +220,65 @@
     }
     .program02 > .p01 .detail > ul.default > li .thum > ul > li.text > dl > dd {
         font-size: 10.5px;
+    }
+
+
+
+    .program03 > div {
+        width: 92%;
+    }
+    .program03 > div .title h3 {
+        font-size: clamp(16px, 4.25vw, 26px);
+    }
+    .program03 > div .detail ul li span,
+    .program03 > div .detail ul li a {
+        padding: 14px 0;
+        font-size: 12px;
+    }
+    .program03 > div .detail ul li a::after {
+        width: 10px;
+        height: 6px;
+        margin-top: -3px;
+    }
+    .program03 > div .detail ul li span {
+        width: 22px;
+    }
+    .program03 > div .detail ul li p {
+        font-size: 12px;
+    }
+    .program03 > div .detail ul li.on span {
+        padding: 30px 0 14px 0;
+    }
+    .program03 > div .detail ul li.on a {
+        padding: 30px 25px 14px 0;
+    }
+    .program03 > div .detail ul li.on a::after {
+        background-position: 0 -15px;
+    }
+
+
+
+    .program04 > div {
+        width: 92%;
+    }
+    .program04 > div .title h3 {
+        font-size: clamp(16px, 4.25vw, 26px);
+    }
+    .program04 > div .detail h4 {
+        font-size: 24px;
+    }
+    .program04 > div .detail p {
+        font-size: 12px;
+    }
+    .program04 > div .detail ul li {
+        line-height: 1.5;
+    }
+
+
+
+    .btnArea .inner .btn {
+        font-size: 12px;
+        padding: 5px 0;
     }
 }
 
@@ -388,6 +460,70 @@
     .program02 > .p01 .detail > ul.default > li > strong {
         display: none;
     }
+
+
+
+    .program03 > div {
+        padding: 35px 0 0;
+        display: block;
+        border-bottom: none;
+    }
+    .program03 > div .detail {
+        margin-top: 35px;
+        column-gap: 20px;
+    }
+    .program03 > div .detail ul li span {
+        display: none;
+    
+    }
+    .program03 > div .detail ul li a {
+        padding: 17px 25px 17px 0;
+    }
+    .program03 > div .detail ul li a,
+    .program03 > div .detail ul li:last-child::after {
+        width: 100%;
+    }
+    .program03 > div .detail ul li p {
+        padding: 0 25px 0 0;
+    }
+    .program03 > div .detail ul li.on a {
+        padding: 17px 25px 17px 0;
+    }
+    .program03 > div .detail ul li.on p {
+        padding: 0 25px 32px 0;
+    }
+
+
+
+    .program04 > div {
+        padding: 35px 0 70px 0;
+        display: block;
+    }
+    .program04 > div .detail {
+        margin-top: 35px;
+        column-gap: 20px;
+        padding-right: 0;
+    }
+    .program04 > div .detail h4 {
+        font-size: 21px;
+        margin: 22px 0 18px 0;
+    }
+    .program04 > div .detail ul {
+        margin: 17px 0 0 0;
+    }
+
+
+
+    .btnArea .inner {
+        padding: 35px 0 55px 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 15px;
+    }
+    .btnArea .inner .btn {
+        width: calc(70% - 30px);
+    }
 }
 
 @media (max-width: 640px) {
@@ -396,6 +532,108 @@
     }
     .program02 > .p01 .detail > ul.mobile {
         display: block;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .pagination {
+        width: fit-content;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .pagination .swiper-pagination-bullet {
+        width: 9px;
+        height: 10px;
+        background: url("../img/program/ico_page.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center bottom -1px;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .pagination .swiper-pagination-bullet-active {
+        background-position: 0 -19px;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .slideNav {
+        position: absolute;
+        width: 16px;
+        height: 30px;
+        cursor: pointer;
+        top: 50%;
+        margin-top: -15px;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-next {
+        right: calc(50% - 100px);
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-prev {
+        left: calc(50% - 100px);
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-next::before,
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-next::after,
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-prev::before,
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-prev::after {
+        position: absolute;
+        display: block;
+        content: "";
+        width: 1px;
+        height: 20px;
+        border-left: 1px solid #666;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-next::before {
+        transform: rotate(-45deg);
+        top: -2px;
+        left: 7px;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-next::after {
+        transform: rotate(45deg);
+        top: 12px;
+        left: 7px;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-prev::before {
+        transform: rotate(45deg);
+        top: -2px;
+        left: 7px;
+    }
+    .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .button-prev::after {
+        transform: rotate(-45deg);
+        top: 12px;
+        left: 7px;
+    }
+    .program02 > .p01 .detail > ul.mobile li .text {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 10px 0;
+        margin-bottom: 30px;
+        gap: 10px;
+    }
+    .program02 > .p01 .detail > ul.mobile li .text dl {
+        position: relative;
+        padding-left: 30px;
+        letter-spacing: -0.5px
+    }
+    .program02 > .p01 .detail > ul.mobile li .text dl::before {
+        position: absolute;
+        display: block;
+        content: "";
+        top: 2px;
+        left: 0;
+        width: 17px;
+        height: 17px;
+        background-image: url(../img/program/ico_blet01.png);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-position: center;
+    }
+    .program02 > .p01 .detail > ul.mobile li .text dl dt {
+        font-size: 12px;
+        font-weight: 700;
+        word-break: keep-all;
+    }
+    .program02 > .p01 .detail > ul.mobile li .text dl dd {
+        font-size: 10.5px;
+        margin-top: 10px;
+        word-break: keep-all;
     }
 }
 

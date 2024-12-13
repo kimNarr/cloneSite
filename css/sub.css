@@ -88,7 +88,7 @@
     background-color: #fff;
     z-index: 99;
 }
-.content .inner {
+.content > .inner {
     max-width: 1200px;
     margin: auto;
 }
@@ -524,9 +524,9 @@
     color: #a0a0a0;
     margin-top: 10px;
 }
+
 .program02 {
     max-width: 100%;
-    border-bottom: 1px solid #e2e2e2;
 }
 .program02 > div {
     max-width: 1200px;
@@ -534,6 +534,7 @@
     padding: 70px 0 85px 0;
     display: flex;
     justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
 }
 .program02 > div .title {
     flex: 1;
@@ -549,7 +550,7 @@
 }
 .program02 > .p01 .detail > ul.default {
     width: 100%;
-    display: none;
+    display: flex;
     flex-direction: column;
     row-gap: 80px;
 }
@@ -613,7 +614,208 @@
 }
 .program02 > .p01 .detail > ul.mobile {
     width: 100%;
-    display: flex;
+    display: none;
     flex-direction: column;
     row-gap: 60px;
+}
+
+.program03 {
+    max-width: 100%;
+}
+.program03 > div {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0 85px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+}
+.program03 > div .title {
+    flex: 1;
+}
+.program03 > div .title h3 {
+    font-size: clamp(26px, 4.25vw, 38px);
+    font-weight: 900;
+    line-height: 1.2;
+    color: #3db283;
+}
+.program03 > div .detail {
+    flex: 2;
+}
+.program03 > div .detail ul {
+    position: relative;
+    width: 100%;
+}
+.program03 > div .detail ul li {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    letter-spacing: -1px;
+    justify-content: space-between;
+}
+.program03 > div .detail ul li span,
+.program03 > div .detail ul li a {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 700;
+    border-top: 1px solid #e2e2e2;
+    padding: 15px 0;
+    transition: 0.3s;
+}
+.program03 > div .detail ul li span {
+    width: 30px;
+    text-align: center;
+}
+.program03 > div .detail ul li a {
+    position: relative;
+    width: calc(100% - 80px);
+    padding-right: 25px;
+    font-size: 15px;
+    font-weight: 700;
+}
+.program03 > div .detail ul li a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 13px;
+    height: 8px;
+    top: 50%;
+    right: 0;
+    margin-top: -4px;
+    background-image: url(../img/program/ico_faq.png);
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-size: 100%;
+}
+.program03 > div .detail ul li p {
+    width: 100%;
+    height: 0px;
+    overflow: hidden;
+    visibility: hidden;
+    padding: 0 25px 0 80px;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #666;
+    transition: 0.3s;
+}
+.program03 > div .detail ul li.on span {
+    color: #3db283;
+    padding: 40px 0 15px 0;
+    border-top: 1px solid #3db283;
+}
+.program03 > div .detail ul li.on a {
+    padding: 40px 25px 15px 0;
+    border-top: 1px solid #3db283;
+}
+.program03 > div .detail ul li.on a::after {
+    background-position: 0 -20px;
+}
+.program03 > div .detail ul li.on p {
+    height: fit-content;
+    padding: 0 20px 32px 80px;
+    visibility: visible;
+}
+.program03 > div .detail ul li:last-child::before,
+.program03 > div .detail ul li:last-child::after {
+    position: absolute;
+    content: "";
+    display: block;
+    height: 1px;
+    bottom: 0;
+    background-color: #e2e2e2;
+}
+.program03 > div .detail ul li:last-child::before {
+    left: 0;
+    width: 30px;
+}
+.program03 > div .detail ul li:last-child::after {
+    right: 0;
+    width: calc(100% - 80px);
+}
+
+.program04 {
+    max-width: 100%;
+}
+.program04 > div {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0 85px 0;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e2e2e2;
+}
+.program04 > div .title {
+    flex: 1;
+}
+.program04 > div .title h3 {
+    font-size: clamp(26px, 4.25vw, 38px);
+    font-weight: 900;
+    line-height: 1.2;
+    color: #3db283;
+}
+.program04 > div .detail {
+    flex: 2;
+    padding: 0 3.75% 0 0;
+}
+.program04 > div .detail .map {
+    width: 100%;
+    height: 300px;
+}
+.program04 > div .detail h4 {
+    font-size: 30px;
+    font-weight: 900;
+    letter-spacing: -1px;
+    color: #3db283;
+    margin: 38px 0 28px 0;
+}
+.program04 > div .detail p {
+    font-size: 16px;
+    font-weight: 700;
+}
+.program04 > div .detail ul {
+    font-size: 12px;
+    margin: 26px 0 10px;
+}
+.program04 > div .detail ul li {
+    line-height: 1.8;
+    color: #666;
+}
+.program04 > div .detail ul li span {
+    display: inline-block;
+    font-weight: 900;
+    color: #3db283;
+    margin-right: 2%;
+}
+
+.btnArea {
+    width: 100%;
+}
+.btnArea .inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 35px 0 0 0;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.btnArea .inner .btn {
+    min-width: 160px;
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 15px;
+    line-height: 1.8;
+    text-align: center;
+    letter-spacing: -1px;
+    box-shadow: 2px 2px 8px 0 rgba(0, 0, 0, .2);
+    box-sizing: border-box;
+}
+.btnArea .inner .btn01 {
+    color: #666;
+    background-color: #fff;
+    border: 1px solid #a7a7a7;
+}
+.btnArea .inner .btn02 {
+    color: #fff;
+    background-color: #3db283;
+    border: 1px solid #3db283;
 }

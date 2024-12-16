@@ -58,7 +58,7 @@
     width: 232px;
     height: 270px;
     opacity: 0;
-    background-image: url("../img/about/vis_mark.png");
+    background-image: url("../img/sub_about/vis_mark.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -95,7 +95,7 @@
 
 /* about */
 .aboutView {
-    background-image: url("../img/about/vis_about.jpg");
+    background-image: url("../img/sub_about/vis_about.jpg");
 }
 
 .about01 {
@@ -169,7 +169,7 @@
     padding: 78px 68px;
     color: #3db283;
     text-align: center;
-    background-image: url("../img/about/bg_story01.png");
+    background-image: url("../img/sub_about/bg_story01.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 90%;
@@ -193,7 +193,7 @@
 }
 .about01 .detail .detailImg strong span {
     display: block;
-    background-image: url("../img/about/bg_story02.png");
+    background-image: url("../img/sub_about/bg_story02.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -285,7 +285,7 @@
 
 /* program */
 .programView {
-    background-image: url("../img/program/vis_program.jpg");
+    background-image: url("../img/sub_program/vis_program.jpg");
 }
 .program01 {
     max-width: 100%;
@@ -412,7 +412,7 @@
     width: 10px;
     height: 14px;
     background-repeat: no-repeat;
-    background-image: url("../img/program/bg_arrow.png");
+    background-image: url("../img/sub_program/bg_arrow.png");
     background-size: 100%;
 }
 .program01 > .p03 .detail > ul li:is(:nth-child(2),:nth-child(3)) p::before {
@@ -434,7 +434,7 @@
     width: 10px;
     height: 14px;
     background-repeat: no-repeat;
-    background-image: url("../img/program/bg_arrow.png");
+    background-image: url("../img/sub_program/bg_arrow.png");
     background-size: 100%;
 }
 .program01 > .p03 .detail > ul li:nth-child(4) p::after {
@@ -591,7 +591,7 @@
     left: 0;
     width: 17px;
     height: 17px;
-    background-image: url("../img/program/ico_blet01.png");
+    background-image: url("../img/sub_program/ico_blet01.png");
     background-repeat: no-repeat;
     background-size: 100%;
     background-position: center;
@@ -681,7 +681,7 @@
     top: 50%;
     right: 0;
     margin-top: -4px;
-    background-image: url(../img/program/ico_faq.png);
+    background-image: url("../img/sub_program/ico_faq.png");
     background-repeat: no-repeat;
     background-position: left top;
     background-size: 100%;
@@ -855,7 +855,7 @@
     transform: translateY(-50%);
     width: 25px;
     height: 100%;
-    background-image: url("../img/program/ico_arrow04.png");
+    background-image: url("../img/sub_program/ico_arrow04.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;

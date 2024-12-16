@@ -587,7 +587,7 @@
     .program02 > .p01 .detail > ul.mobile li .swiper .slideControl .pagination .swiper-pagination-bullet {
         width: 9px;
         height: 10px;
-        background: url("../img/program/ico_page.png");
+        background: url("../img/sub_program/ico_page.png");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center bottom -1px;
@@ -660,7 +660,7 @@
         left: 0;
         width: 17px;
         height: 17px;
-        background-image: url(../img/program/ico_blet01.png);
+        background-image: url("../img/sub_program/ico_blet01.png");
         background-repeat: no-repeat;
         background-size: 100%;
         background-position: center;

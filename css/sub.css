@@ -830,11 +830,66 @@
     padding: 70px 0 85px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-.program04 > div .title h3 {
+.program05 > .p01 .title h3 {
     font-size: clamp(26px, 4.25vw, 38px);
     font-weight: 900;
     line-height: 1.2;
     color: #3db283;
+}
+.program05 > .p01 > a {
+    position: relative;
+    display: block;
+    padding-right: 30px;
+    letter-spacing: -0.5px;
+    font-size: 15px;
+    color: #3db283;
+}
+.program05 > .p01 > a::after {
+    position: absolute;
+    display: block;
+    content: "";
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 25px;
+    height: 100%;
+    background-image: url("../img/program/ico_arrow04.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.program05 > .p02 {
+    padding: 0 0 85px 0;
+}
+.program05 > .p02 .recommendSlide a {
+    color: #a0a0a0;
+}
+.program05 > .p02 .recommendSlide a:hover {
+    color: #3db283;
+}
+.program05 > .p02 .recommendSlide a > .slideInner {
+    display: flex;
+    justify-content: start;
+    align-items:flex-start;
+    column-gap: 20px;
+}
+.program05 > .p02 .recommendSlide a > .slideInner figure {
+    flex: 1;
+}
+.program05 > .p02 .recommendSlide a > .slideInner .text {
+    flex: 2;
+}
+.program05 > .p02 .recommendSlide a > .slideInner .text h4 {
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.program05 > .p02 .recommendSlide a > .slideInner .text p {
+    font-size: 15px;
+    word-break: keep-all;
+}
+.program05 .slideControl {
+    width: 100%;
 }

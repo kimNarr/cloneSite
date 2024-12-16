@@ -46,3 +46,23 @@ function faqToggle() {
     })
 }
 faqToggle();
+
+function recommendSilde() {
+    let recommendSwiper = new Swiper(".recommendSlide", {
+        breakpoints: {
+    	320: {
+      	slidesPerView: 3,
+      	spaceBetween: 10
+   		 },
+    	640: {
+     	 slidesPerView: 4,
+     	 spaceBetween: 15
+   		 }
+  		},
+        navigation: {
+            nextEl: '.program05 .slideControl .button-next',
+            prevEl: '.program05 .slideControl .button-prev',
+        },
+    });
+}
+recommendSilde()

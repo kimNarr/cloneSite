@@ -675,6 +675,12 @@
         margin-top: 10px;
         word-break: keep-all;
     }
+
+
+
+    .program05 .slideControl {
+        display: none;
+    }
 }
 
 @media (max-width: 487px) {

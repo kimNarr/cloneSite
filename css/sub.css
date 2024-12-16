@@ -891,5 +891,53 @@
     word-break: keep-all;
 }
 .program05 .slideControl {
-    width: 100%;
+    position: relative;
+    width: 150px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.program05 .slideControl > div {
+    position: absolute;
+    width: 16px;
+    height: 30px;
+    cursor: pointer;
+}
+.program05 .slideControl > div.button-prev {
+    left: 0;
+}
+.program05 .slideControl > div.button-next {
+    right: 0;
+}
+.program05 .slideControl > div.button-prev::before,
+.program05 .slideControl > div.button-prev::after,
+.program05 .slideControl > div.button-next::before,
+.program05 .slideControl > div.button-next::after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 1px;
+    height: 20px;
+    border-left: 1px solid #fff;
+}
+.program05 .slideControl > div.button-prev::before {
+    transform: rotate(45deg);
+        top: -2px;
+        left: 7px
+}
+.program05 .slideControl > div.button-prev::after {
+    transform: rotate(-45deg);
+        top: 12px;
+        left: 7px;
+}
+.program05 .slideControl > div.button-next::before {
+    transform: rotate(-45deg);
+        top: -2px;
+        left: 7px;
+}
+.program05 .slideControl > div.button-next::after {
+    transform: rotate(45deg);
+        top: 12px;
+        left: 7px;
 }

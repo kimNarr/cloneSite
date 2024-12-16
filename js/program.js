@@ -1,3 +1,25 @@
+let process = document.querySelector(".program01 ");
+let process01 = process.querySelector(".detail ul li:first-child");
+let process02 = process.querySelector(".detail ul li:nth-child(2)");
+let process03 = process.querySelector(".detail ul li:nth-child(3)");
+let process04 = process.querySelector(".detail ul li:nth-child(4)");
+let process05 = process.querySelector(".detail ul li:last-child");
+
+let processTimeline = gsap.timeline({
+    scrollTrigger: {
+        trigger: process,
+        start: "+=100 center",
+        end: "+=100 center",
+        duration: 0.1,
+    }
+});
+
+processTimeline.to(process01,{opacity: 1});
+processTimeline.to(process02,{opacity: 1, delay: 0.02});
+processTimeline.to(process03,{opacity: 1, delay: 0.02});
+processTimeline.to(process04,{opacity: 1, delay: 0.02});
+processTimeline.to(process05,{opacity: 1, delay: 0.02});
+
 // mobile slide
 function mSlide() {
     if (window.innerWidth <= 640) {

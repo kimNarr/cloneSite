@@ -8,7 +8,6 @@
     background-position: center;
     background-size: cover;
 }
-
 .sub .inner {
     width: 100%;
     height: 100%;
@@ -91,6 +90,9 @@
 .content > .inner {
     max-width: 1200px;
     margin: auto;
+}
+.bgGray {
+    background-color: #323332;
 }
 
 /* about */
@@ -385,6 +387,7 @@
 .program01 > .p03 .detail > ul li {
     position: relative;
     height: fit-content;
+    opacity: 0;
 }
 .program01 > .p03 .detail > ul li p {
     position: absolute;
@@ -940,4 +943,226 @@
     transform: rotate(45deg);
         top: 12px;
         left: 7px;
+}
+
+/* alumni */
+.alumniView {
+    background-image: url("../img/sub_alumni/vis_project.jpg");
+}
+.subAlumni {
+    max-width: 100%;
+}
+.subAlumni .inner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 0 85px 0;
+}
+.subAlumni .inner .searchArea {
+    position: relative;
+    max-width: 800px;
+    height: 48px;
+    margin: auto;
+    border-bottom: 2px solid #3cb282;
+}
+.subAlumni .inner .searchArea form {
+    width: 100%;
+    height: 100%;
+}
+.subAlumni .inner .searchArea input[type="search"] {
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 10px 55px 10px 20px;
+    color: #fff;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+.subAlumni .inner .searchArea .searchBtn {
+    position: absolute;
+    width: 21px;
+    height: 17px;
+    right: 11px;
+    bottom: 13px;
+    border: none;
+    background-image: url("../img/sub_alumni/ico_sch2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    background-color: transparent;
+}
+.subAlumni .inner .tabArea {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    column-gap: 20px;
+}
+.subAlumni .inner .tabArea button {
+    width: 200px;
+    height: 40px;
+    font-size: 15px;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid #3cb282;
+    cursor: pointer;
+}
+.subAlumni .inner .tabArea button.on {
+    background-color: #3cb282;
+}
+.subAlumni .inner .cateList {
+    position: relative;
+    max-width: 1200px;
+    margin: auto;
+    border-bottom: 1px solid #4e4e4e;
+}
+.subAlumni .inner .cateList > div {
+    padding: 40px 0;
+}
+.subAlumni .inner .cateList > div > ul {
+    display: flex;
+    justify-content: flex-start;
+    column-gap: 30px;
+}
+.subAlumni .inner .cateList > div > ul > li {
+    font-size: 13.5px;
+    color: #fff;
+}
+.subAlumni .inner .cateList > div > ul > li input[type="checkbox"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    margin-left: -1px;
+    padding: 0;
+    border: none;
+    clip: rect(1px, 1px, 1px, 1px);
+}
+.subAlumni .inner .cateList > div > ul > li label {
+    position: relative;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.subAlumni .inner .cateList > div > ul > li label::before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 4px;
+    height: 4px;
+    top: 50%;
+    left: 10px;
+    margin-top: -2px;
+    margin-left: -2px;
+    background-color: #fff;
+    border-radius: 100%;
+}
+.subAlumni .inner .cateList > div > ul > li label span {
+    color: #9a9a9a;
+}
+.subAlumni .inner .cateList > div > ul > li input[type="checkbox"]:checked + label,
+.subAlumni .inner .cateList > div > ul > li input[type="checkbox"]:checked + label span {
+    color: #3cb282;
+}
+.subAlumni .inner .cateList > div > ul > li input[type="checkbox"]:checked + label::before {
+    background-color: #3cb282;
+}
+.subAlumni .inner .cateList > .applyUse {
+    display: none;
+}
+.subAlumni .inner .cateList > .applyUse h3 {
+    font-size: 13.5px;
+    font-weight: 500;
+    color: #3cb282;
+    margin-bottom: 10px;
+}
+.subAlumni .inner .cateList > .applyUse ul + h3 {
+    margin-top: 20px;
+}
+.tagArea {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.tagArea span {
+    position: relative;
+    display: block;
+    margin: 20px 0;
+    padding: 0 28px 0 10px;
+    font-size: 13.5px;
+    line-height: 30px;
+    color: #000;
+    background-color: #3cb282;
+}
+.tagArea span strong {
+    font-weight: 500;
+}
+.tagArea span a {
+    position: absolute;
+    width: 7px;
+    height: 7px;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    background-image: url("../img/sub_alumni/ico-remove.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.tagArea button {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px 10px 0;
+    padding: 0;
+    background-color: transparent;
+    background-image: url("../img/sub_alumni/ico-reset.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: 1px solid #4e4e4e;
+    cursor: pointer;
+}
+.subAlumni .inner .pjtList {
+    margin-top: 45px;
+}
+.subAlumni .inner .pjtList ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: clamp(5px, 2.5vw, 40px);
+}
+.subAlumni .inner .pjtList ul li {
+    background-color: #fff;
+}
+.subAlumni .inner .pjtList ul li a {
+    display: block;
+    padding: 15px 30px 20px 30px;
+}
+.subAlumni .inner .pjtList ul li a .itemInner {
+    text-align: center;
+}
+.subAlumni .inner .pjtList ul li a .itemInner .logo {
+    display: flex;
+    justify-content: center;
+}
+.subAlumni .inner .pjtList ul li a .itemInner .text {
+    margin-top: 15px;
+    letter-spacing: -0.5px;
+    word-break: keep-all;
+}
+.subAlumni .inner .pjtList ul li a .itemInner .text h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: #333;
+}
+.subAlumni .inner .pjtList ul li a .itemInner .text p {
+    margin-top: 20px;
+    height: 70px;
+    font-size: 13px;
+    color: #a0a0a0;
+}
+.subAlumni .inner .pjtList ul li a .itemInner .text span {
+    display: block;
+    margin-top: 20px;
+    font-size: 12px;
+    color: #3cb282;
 }

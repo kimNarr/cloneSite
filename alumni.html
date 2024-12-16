@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="format-detection" content="telephone=no"><!-- 사파리 전화번호 인식 차단 -->
-    <title>PROGRAM &lt; HOME</title>
+    <title>ALUMNI &lt; HOME</title>
     <link rel="shortcut icon" href="./img/favicon/favicon.ico" type="image/x-icon">
     <!-- swiper slide -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
@@ -24,6 +24,7 @@
     <!-- script -->
     <script src="./js/common.js" defer></script>
     <script src="./js/subCommon.js" defer></script>
+    <script src="./js/alumni.js" defer></script>
     
 </head>
 <body>
@@ -116,7 +117,7 @@
         </header>
         <!-- //header -->
          <!-- sub title -->
-        <section class="sub aboutView">
+        <section class="sub alumniView">
             <div class="inner">
                 <article class="title">
                     <h2>alumni</h2>
@@ -127,6 +128,264 @@
             </div>
         </section>
         <!-- sub title -->
+        <!-- content -->
+        <section class="content bgGray">
+            <article class="subAlumni">
+                <div class="inner">
+                    <div class="searchArea">
+                        <form action="#">
+                            <input type="search" placeholder="Search">
+                            <button class="searchBtn"></button>
+                        </form>
+                    </div>
+                    <div class="tabArea">
+                        <button class="techTab on">기술분야</button>
+                        <button class="applyTab">적용분야</button>
+                    </div>
+                    <!-- cateList -->
+                    <div class="cateList">
+                        <div class="tech">
+                            <ul>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="tech1">
+                                    <label for="tech1">5G <span>(5)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="tech2">
+                                    <label for="tech2">AI <span>(71)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="tech3">
+                                    <label for="tech3">AR/VR <span>(20)</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="applyUse">
+                            <h3>적용분야</h3>
+                            <ul class="apply">
+                                <li class="checkArea">
+                                    <input type="checkbox" id="apply1">
+                                    <label for="apply1">관광 <span>(5)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="apply2">
+                                    <label for="apply2">광고 <span>(71)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="apply3">
+                                    <label for="apply3">교육 <span>(20)</span></label>
+                                </li>
+                            </ul>
+                            <h3>사엽영역</h3>
+                            <ul class="business">
+                                <li class="checkArea">
+                                    <input type="checkbox" id="business1">
+                                    <label for="business1">B2B <span>(5)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="business2">
+                                    <label for="business2">B2C <span>(71)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="business3">
+                                    <label for="business3">B2G <span>(20)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="business4">
+                                    <label for="business4">SV <span>(5)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="business5">
+                                    <label for="business5">ESG <span>(71)</span></label>
+                                </li>
+                                <li class="checkArea">
+                                    <input type="checkbox" id="business6">
+                                    <label for="business6">기타 <span>(20)</span></label>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- //cateList -->
+                    <!-- hashtag area -->
+                    <div class="tagArea">
+                        <span>
+                            <strong>5G</strong>
+                            <a href="#"></a>
+                        </span>
+                        <span>
+                            <strong>AI</strong>
+                            <a href="#"></a>
+                        </span>
+                        <button type="button"></button>
+                    </div>
+                    <!-- //hashtag area -->
+                    <!-- project list -->
+                    <div class="pjtList">
+                        <ul>
+                            <li class="projectItem">
+                                <a href="#">
+                                    <div class="itemInner">
+                                        <div class="logo"><img src="./img/sub_alumni/project/p1.png" alt="로고이미지"></div>
+                                        <div class="text">
+                                            <h4>효돌</h4>
+                                            <p>시니어, 보호자, 지역사회를 위한 Global AI Care Platform</p>
+                                            <span>#ESG Korea 2024</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="projectItem">
+                                <a href="#">
+                                    <div class="itemInner">
+                                        <div class="logo"><img src="./img/sub_alumni/project/p2.png" alt="로고이미지"></div>
+                                        <div class="text">
+                                            <h4>지비소프트</h4>
+                                            <p>소외됨 없이 모두의 마음 건강을 위한 비접촉 생체신호 측정 솔루션</p>
+                                            <span>#ESG Korea 2024</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="projectItem">
+                                <a href="#">
+                                    <div class="itemInner">
+                                        <div class="logo"><img src="./img/sub_alumni/project/p3.png" alt="로고이미지"></div>
+                                        <div class="text">
+                                            <h4>돌봄드림</h4>
+                                            <p>심탄도 센서 디바이스 기반 라이프로그 통합 관제 시스템</p>
+                                            <span>#ESG Korea 2024</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="projectItem">
+                                <a href="#">
+                                    <div class="itemInner">
+                                        <div class="logo"><img src="./img/sub_alumni/project/p4.png" alt="로고이미지"></div>
+                                        <div class="text">
+                                            <h4>바다플랫폼</h4>
+                                             
+                                            <span>#ESG Korea 2024</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="projectItem">
+                                <a href="#">
+                                    <div class="itemInner">
+                                        <div class="logo"><img src="./img/sub_alumni/project/p5.png" alt="로고이미지"></div>
+                                        <div class="text">
+                                            <h4>더그리트</h4>
+                                            <p>일회용품이 필요 없는 세상을 만들어가는 토탈솔루션</p>
+                                            <span>#ESG Korea 2024</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="projectItem">
+                                <a href="#">
+                                    <div class="itemInner">
+                                        <div class="logo"><img src="./img/sub_alumni/project/p6.png" alt="로고이미지"></div>
+                                        <div class="text">
+                                            <h4>마리나체인</h4>
+                                            <p>AI 기술을 활용한 해운물류 산업 디지털전환 및 국제 환경 규제 솔루션</p>
+                                            <span>#ESG Korea 2024</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="projectItem">
+                                <a href="#">
+                                    <div class="itemInner">
+                                        <div class="logo"><img src="./img/sub_alumni/project/p7.png" alt="로고이미지"></div>
+                                        <div class="text">
+                                            <h4>비피피오</h4>
+                                            <p>해양 환경 보호를 위한 부유식 해양쓰레기 수거 자동화 솔루션</p>
+                                            <span>#ESG Korea 2024</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="projectItem">
+                                <a href="#">
+                                    <div class="itemInner">
+                                        <div class="logo"><img src="./img/sub_alumni/project/p8.png" alt="로고이미지"></div>
+                                        <div class="text">
+                                            <h4>워터아이즈</h4>
+                                            <p>빅데이터 기반 고농도 유입하수 수질측정기술</p>
+                                            <span>#ESG Korea 2024</span>
+                                        </div>
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- //project list -->
+                </div>
+            </article>
+        </section>
+        <!-- //content -->
+
+        <!-- footer -->
+        <footer>
+            <div class="inner">
+                <div class="left">
+                    <div class="logo">
+                        <a href="#"><img src="./img/logo_footer.png" alt="로고이미지"></a>
+                    </div>
+                    <p class="text">협력의 가치로<br>미래를 그리는<br class="mBr">SK True Innovation입니다</p>
+                </div>
+                <div class="right">
+                    <div class="fnb">
+                        <ul>
+                            <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                            <li><a href="#">이메일주소무단수집거부</a></li>
+                            <li><a href="#">이용약관</a></li>
+                            <li><a href="#">뉴스레터 구독신청/해지</a></li>
+                        </ul>
+                        <div class="family">
+                            <div class="inner">
+                                <select name="family" id="family" onchange="familySite()">
+                                    <option value="" hidden>Family Site</option>
+                                    <option value="http://www.sktelecom.co.kr/">SK telecom</option>
+                                    <option value="https://ccei.creativekorea.or.kr/daejeon">대전 창조경제혁신센터</option>
+                                    <option value="https://ccei.creativekorea.or.kr/seoul">서울 창조경제혁신센터</option>
+                                    <option value="https://lora.sktiot.com/main/index.do">IoT Portal</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <strong>Address</strong>
+                                <span>서울특별시 중구 을지로66</span>
+                                <strong>대표이사·사장</strong>
+                                <span>유영상</span>
+                                <strong>Tel</strong>
+                                <span>02-6250-8124</span>
+                            </li>
+                            <li>
+                                <strong>Fax</strong>
+                                <span>02-6250-8126</span>
+                                <strong>사업자등록번호</strong>
+                                <span>104-81-37225</span>
+                                <strong>판매허가번호</strong>
+                                <span>중구 02923호</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <p class="copyright">Copyright True innovation. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+        <!-- //footer -->
+
+        <!-- top btn -->
+        <div class="topBtn">
+            <img src="./img/ico_visual03.png" alt="탑버튼">
+        </div>
+        <!-- //top btn -->
     </div>
 </body>
 </html>

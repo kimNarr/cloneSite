@@ -32,6 +32,6 @@ let esgTimeline = gsap.timeline({
 });
 
 esgTimeline.to(esgImg03,{opacity: 1});
-esgTimeline.to(esgImg02,{opacity: 1, delay: 0.5});
+esgTimeline.to(esgImg02,{opacity: 1, delay: 0.2});
 esgTimeline.to(esgImg01,{opacity: 1});
-esgTimeline.to(esgText,{opacity: 1, delay: 0.5});
+esgTimeline.to(esgText,{opacity: 1, delay: 0.2});

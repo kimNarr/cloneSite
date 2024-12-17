@@ -3,6 +3,7 @@ let header = document.querySelector("header");
 let hInner = document.querySelector("header .inner")
 let gnb = document.querySelectorAll(".gnb > li");
 let navBg = document.querySelector(".navBg");
+let wrap = document.querySelector("#wrap");
 
 function headerOver () {
     gnb.forEach((li,idx)=>{
@@ -12,6 +13,7 @@ function headerOver () {
             if(idx !== 2 && idx !== 3) {
                 hInner.classList.add("on");
                 snb.classList.add("on");
+                wrap.classList.add("on");
             };
         });
         li.addEventListener("mouseleave", ()=>{
@@ -19,6 +21,7 @@ function headerOver () {
             hInner.classList.remove("on");
             if(idx !== 2 && idx !==3) {
                 snb.classList.remove("on");
+                wrap.classList.remove("on");
             };
         });
     });    
